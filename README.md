@@ -1,16 +1,21 @@
 # pyfinder
 Design POC for Python + Flask + uwsgi + nginx for scalable production 
 
-## requirements
-- conda or virtualenv
+## Requirements
 - pip
 - python 3.x
 
-## how to start
+## How to start
 Assume you're at the root directory of this repository. Open terminal and run this:
 
 ```
+chmod +x ./deploy/deploy.sh
 chmod +x ./startserver.sh
+
+# install dependencies
+./deploy.sh
+
+# start server
 ./startserver.sh
 ```
 
