@@ -14,7 +14,7 @@ chmod +x ./startserver.sh
 ./startserver.sh
 ```
 
-Expect to see these
+Expect to see these:
 ```
 ./startserver.sh
 [uWSGI] getting INI configuration from uwsgi.ini
@@ -58,7 +58,7 @@ spawned uWSGI http 1 (pid: 7966)
 ```
 
 ## how to change uwsgi setting?
-You can change the uwsgi settings by modifying its config file `uwsgi.ini`. Currently it has bare minimum configurations to run uwsgi server:
+For simplicity I added `startserver.sh`, with a parameter is the .ini file as configuration set for uwsgi server. You can change the uwsgi settings by modifying its config file `uwsgi.ini`. Currently it has some basoc minimum configurations :
 ```
 [uwsgi]
 module = wsgi:app  # wsgi is required, app is the name of Flask callable
@@ -77,5 +77,5 @@ stats = :9191  # stats port (JSON stats)
 ```
 
 ## references
-- (uWSGI latest documentation)[https://uwsgi-docs.readthedocs.io/en/latest/]
-- (uWSGI Github source code)[https://github.com/unbit/uwsgi]
+- [uWSGI latest documentation)](https://uwsgi-docs.readthedocs.io/en/latest/)
+- [uWSGI Github source code](https://github.com/unbit/uwsgi)
